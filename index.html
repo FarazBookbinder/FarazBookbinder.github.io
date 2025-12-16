@@ -1,172 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Muaaviya(Faraz) Bookbinder</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Muaaviya Faraz | QA Engineer</title>
 
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f6f8;
-            margin: 0;
-            padding: 0;
-            color: #333;
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #475569;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            background: #fff;
-            padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
         }
 
         header {
+            background: linear-gradient(135deg, var(--primary), #1e40af);
+            color: white;
+            padding: 3rem 1rem;
             text-align: center;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
         }
 
         header h1 {
-            margin: 0;
-            color: #007bff;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
         }
 
         header p {
-            margin: 5px 0;
-            font-size: 14px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem 1rem;
         }
 
         section {
-            margin-bottom: 20px;
+            margin-bottom: 3rem;
         }
 
-        section h2 {
-            color: #007bff;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            font-size: 20px;
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.4rem;
         }
 
-        .item {
-            margin-bottom: 10px;
-        }
-
-        .item h3 {
-            margin: 0;
-            font-size: 16px;
-        }
-
-        .item span {
-            font-size: 13px;
-            color: #666;
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+            margin-bottom: 1.5rem;
         }
 
         ul {
-            margin: 5px 0 0 20px;
+            padding-left: 1.2rem;
         }
 
-        .skills span {
-            display: inline-block;
-            background: #007bff;
-            color: #fff;
-            padding: 5px 10px;
-            margin: 5px 5px 0 0;
-            border-radius: 4px;
-            font-size: 13px;
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 0.8rem;
+        }
+
+        .skill {
+            background: #e0e7ff;
+            padding: 0.6rem 0.8rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
         }
 
         footer {
             text-align: center;
-            font-size: 13px;
-            color: #777;
-            margin-top: 20px;
+            padding: 2rem 1rem;
+            background: #020617;
+            color: #cbd5f5;
+            font-size: 0.9rem;
         }
 
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
+        a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
+
+<header>
+    <h1>Muaaviya (Faraz) Bookbinder</h1>
+    <p>Senior QA Engineer / Software Tester</p>
+    <p>📧 muaaviya26@gmail.com | 📱 7048182616</p>
+</header>
 
 <div class="container">
 
-    <header>
-        <h1>Your Name</h1>
-        <p>Email: you@email.com | Phone: +123 456 7890</p>
-        <p>LinkedIn: linkedin.com/in/yourname | GitHub: github.com/yourname</p>
-    </header>
-
     <section>
-        <h2>Profile</h2>
-        <p>
-            Brief professional summary highlighting your experience, skills,
-            and career goals in 2–3 lines.
-        </p>
+        <h2>Career Objective</h2>
+        <div class="card">
+            Dedicated Software Tester with 6.5+ years of experience in manual and basic automation testing. 
+            Skilled in identifying defects, improving product quality, and delivering reliable, user-friendly software.
+        </div>
     </section>
 
     <section>
-        <h2>Experience</h2>
+        <h2>Skills</h2>
+        <div class="card skills">
+            <div class="skill">Manual Testing</div>
+            <div class="skill">Black Box Testing</div>
+            <div class="skill">Smoke / Regression Testing</div>
+            <div class="skill">Test Case Design</div>
+            <div class="skill">Bug Tracking (Jira)</div>
+            <div class="skill">Agile / Scrum</div>
+            <div class="skill">API Testing (Postman)</div>
+            <div class="skill">Basic SQL</div>
+            <div class="skill">Web & Mobile App Testing</div>
+            <div class="skill">TestLink / TestRail</div>
+            <div class="skill">JMeter (Load Testing)</div>
+            <div class="skill">Healthcare Domain (EHR / EMR)</div>
+        </div>
+    </section>
 
-        <div class="item">
-            <h3>Job Title – Company Name</h3>
-            <span>Jan 2022 – Present</span>
+    <section>
+        <h2>Professional Experience</h2>
+
+        <div class="card">
+            <h3>QA Engineer – TechCompose Solutions Pvt Ltd</h3>
+            <p><em>Mar 2023 – Present</em></p>
             <ul>
-                <li>Responsibility or achievement #1</li>
-                <li>Responsibility or achievement #2</li>
+                <li>Managed end-to-end testing lifecycle from requirements to defect reporting.</li>
+                <li>Tested payment gateway integrations (WePay, Finix).</li>
+                <li>Performed regression, functional, usability, and load testing.</li>
+                <li>Used JMeter to identify performance bottlenecks.</li>
             </ul>
         </div>
 
-        <div class="item">
-            <h3>Job Title – Company Name</h3>
-            <span>Jan 2020 – Dec 2021</span>
+        <div class="card">
+            <h3>Software Test Analyst – Advantmed India LLP</h3>
+            <p><em>Dec 2020 – Mar 2023</em></p>
             <ul>
-                <li>Responsibility or achievement #1</li>
-                <li>Responsibility or achievement #2</li>
+                <li>Executed functional, integration, regression, and performance testing.</li>
+                <li>Worked on healthcare systems and medical coding standards.</li>
+                <li>Maintained test cases using TestLink.</li>
+                <li>Mentored junior QA team members.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>QA Engineer – AssureCare Healthtech LLP</h3>
+            <p><em>Jan 2019 – Nov 2020</em></p>
+            <ul>
+                <li>Worked on EHR/EMR healthcare applications.</li>
+                <li>Validated patient scheduling and data management workflows.</li>
+                <li>Executed detailed test plans and scenarios.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Jr. QA Engineer – Xongolab Technologies LLP</h3>
+            <p><em>Dec 2017 – Dec 2018</em></p>
+            <ul>
+                <li>Created test cases based on client requirements.</li>
+                <li>Performed functional and regression testing on iOS & Android apps.</li>
+                <li>Collaborated closely with developers for bug resolution.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Professional Development</h2>
+        <div class="card">
+            <ul>
+                <li><strong>Software Testing Fundamentals</strong> – Unicode Technologies (2017)</li>
+                <li><strong>Python Automation (Selenium)</strong> – The Testing Academy (2024)</li>
             </ul>
         </div>
     </section>
 
     <section>
         <h2>Education</h2>
-
-        <div class="item">
-            <h3>Degree – University Name</h3>
-            <span>2016 – 2020</span>
-            <p>Short description or achievements</p>
+        <div class="card">
+            <strong>BE in Information Technology</strong><br/>
+            SPB Patel Institute of Technology (GTU)<br/>
+            <em>2014 – 2017</em>
         </div>
     </section>
-
-    <section>
-        <h2>Skills</h2>
-        <div class="skills">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Python</span>
-        </div>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <div class="item">
-            <h3>Project Name</h3>
-            <p>Short description of the project and technologies used.</p>
-        </div>
-    </section>
-
-    <footer>
-        © 2025 Your Name
-    </footer>
 
 </div>
+
+<footer>
+    © 2025 Muaaviya Faraz • QA Engineer • Hosted on GitHub Pages
+</footer>
 
 </body>
 </html>
